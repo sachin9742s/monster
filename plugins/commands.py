@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/KicchaRequest')
+                        InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -99,8 +99,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔎 Search Movies 🔍", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Request Group 🎟️", url="https://t.me/KicchaRequest")
+                        InlineKeyboardButton("Search Movies", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("Request Group", url="https://t.me/KicchaRequest")
                     ],
                     [
                        InlineKeyboardButton("About", callback_data="about")
@@ -193,7 +193,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB'),
-            InlineKeyboardButton('Source Code', url='https://t.me/KicchaRequest')
+            InlineKeyboardButton('Request Group, url='https://t.me/KicchaRequest')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/sachin_official_admin'>Sachin_S</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://t.me/KicchaRequest'>Click here</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/sachin_official_admin'>Sachin_S</a>\nLanguage : <code>Kannada</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nRequest Group : <a href='https://t.me/KicchaRequest'>Click here</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>GD FILMCLUB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
