@@ -103,7 +103,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("Request Group 🎟️", url="https://t.me/KicchaRequest")
                     ],
                     [
-                       InlineKeyboardButton("About", callback_data="about"
+                       InlineKeyboardButton("About", callback_data="about")
                     ]
                 ]
             ))
