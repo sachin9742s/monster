@@ -99,11 +99,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Movies", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("Request Group", url="https://t.me/KicchaRequest")
                     ],
                     [
-                       InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("About", callback_data="about")
                     ]
                 ]
             ))
