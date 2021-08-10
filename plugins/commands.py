@@ -102,14 +102,11 @@ async def start(bot, cmd):
                         InlineKeyboardButton("🔎 Search Movies 🔍", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("Request Group 🎟️", url="https://t.me/KicchaRequest")
                     ],
-                       InlineKeyboardButton("Group Owner 🧑‍💻", url="https://t.me/sachin_official_admin"),
-                       InlineKeyboardButton("About", callback_data="about")
-                    ],
+                       InlineKeyboardButton("About", callback_data="about"
                     [
-                        InlineKeyboardButton("Update Channel 🎫", url="https://t.me/KicchaRequest")
                     ]
                 ]
-            )
+            ))
         )
 
 
