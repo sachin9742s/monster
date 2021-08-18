@@ -66,8 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest')
+                        InlineKeyboardButton('🔎 Search again 🔍', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('💬 Request Group 💬', url='https://t.me/KicchaRequest')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -99,8 +99,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Request Group", url="https://t.me/KicchaRequest")
+                        InlineKeyboardButton("🔎 Search Here 🔍", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("💬 Request Group 💬", url="https://t.me/KicchaRequest")
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about")
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB'),
+            InlineKeyboardButton('💬 Kiccha Request 💬', url='https://t.me/KicchaRequest')
         ]
         ]
     await message.reply(text="<b>Developer : <a href='https://t.me/sachin_official_admin'>Sachin S</a>\nLanguage : <code>Kannada</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nRequest Group : <a href='https://t.me/KicchaRequest'>Kiccha Request</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>GD_FILMCLUB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
