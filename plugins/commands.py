@@ -66,8 +66,8 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔎 Search again 🔍', switch_inline_query_current_chat=''),
                         InlineKeyboardButton('💬 Request Group 💬', url='https://t.me/KicchaRequest')
+                        InlineKeyboardButton('💬 Update Channel 💬', url='https://t.me/GD_FILMCLUB')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -104,9 +104,8 @@ async def start(bot, cmd):
                         InlineKeyboardButton("✳️ Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
                     ],
                     [
-                        InlineKeyboardButton("🙏Help", callback_data="help"),
+                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("👨‍💼About", callback_data="about"),
-                        InlineKeyboardButton("🔐Close", callback_data="closeit")
                     ]
                 ]
             )
@@ -194,9 +193,16 @@ async def delete(bot, message):
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
     buttons = [
-        [
-            InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB'),
-            InlineKeyboardButton('💬 Kiccha Request 💬', url='https://t.me/KicchaRequest')
-        ]
-        ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/sachin_official_admin'>Sachin S</a>\nLanguage : <code>Kannada</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nRequest Group : <a href='https://t.me/KicchaRequest'>Kiccha Request</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>GD_FILMCLUB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+                [
+                    [
+                        InlineKeyboardButton('💬 Update Channel 💬', url='https://t.me/GD_FILMCLUB'),
+                        InlineKeyboardButton('💬 Kiccha Request 💬', url='https://t.me/KicchaRequest')
+                    ],
+                    [
+                        InlineKeyboardButton("🔎 Search Here 🔍", switch_inline_query_current_chat=''),
+                        ]
+                   ]
+              )
+         )
+
+    await message.reply(text="<b>○ Creator : <a href='https://t.me/sachin_official_admin'>Sachin S</a>\n○ Language :  <code>Kannada</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n○ Supported Site : <a href='https://my.telegram.org/'>Only Telegram</a>\n○ Server : <a href='https://herokuapp.com/'>Heroku</a>\n○ Database : <a href='https://www.mongodb.com/'>MangoDB</a>\nRequest Group : <a href='https://t.me/KicchaRequest'>Kiccha Request</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>GD_FILMCLUB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
