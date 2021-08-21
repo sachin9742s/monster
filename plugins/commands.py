@@ -97,7 +97,6 @@ async def start(bot, cmd):
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                buttons = [
         [
            InlineKeyboardButton("🗣️Group", url="https://telegram.dog/KicchaRequest"),
            InlineKeyboardButton("📃 Channel", url="https://telegram.dog/GD_FILMCLUB"),
