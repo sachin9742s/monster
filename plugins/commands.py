@@ -195,7 +195,7 @@ async def bot_info(bot, message):
     buttons = [
                 [
                     [
-                        InlineKeyboardButton('💬 Update Channel 💬', url='https://t.me/GD_FILMCLUB'),
+                        InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB'),
                         InlineKeyboardButton('💬 Kiccha Request 💬', url='https://t.me/KicchaRequest')
                     ],
                     [
