@@ -97,16 +97,17 @@ async def start(bot, cmd):
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-        [
-           InlineKeyboardButton("🗣️Group", url="https://telegram.dog/KicchaRequest"),
-           InlineKeyboardButton("📃 Channel", url="https://telegram.dog/GD_FILMCLUB"),
-           InlineKeyboardButton("✳️ Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
-        ],
-        [
-           InlineKeyboardButton("🙏Help", callback_data="help"),
-           InlineKeyboardButton("👨‍💼About", callback_data="about"),
-           InlineKeyboardButton("🔐Close", callback_data="closeit")
-        ]
+                [
+                    [
+                        InlineKeyboardButton("🗣️Group", url="https://telegram.dog/KicchaRequest"),
+                        InlineKeyboardButton("📃 Channel", url="https://telegram.dog/GD_FILMCLUB"),
+                        InlineKeyboardButton("✳️ Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
+                    ],
+                    [
+                        InlineKeyboardButton("🙏Help", callback_data="help"),
+                        InlineKeyboardButton("👨‍💼About", callback_data="about"),
+                        InlineKeyboardButton("🔐Close", callback_data="closeit")
+                    ]
                 ]
             )
         )
