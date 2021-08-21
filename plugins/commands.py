@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('💬 Request Group 💬', url='https://t.me/KicchaRequest')
-                        InlineKeyboardButton('💬 Update Channel 💬', url='https://t.me/GD_FILMCLUB')
+                        InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -194,7 +194,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
+            InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB'),
             InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
         ]
         ]
