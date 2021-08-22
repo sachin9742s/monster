@@ -299,6 +299,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
                 buttons = [
+                    [
                         InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest'),
                         InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB')
                     ]
