@@ -198,4 +198,4 @@ async def bot_info(bot, message):
             InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
         ]
         ]
-    await query.message.edit(text="<b>Developer : <a href='https://t.me/sachin_official_admin'>Sachin_S</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href=''>🔒</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>GD_FILMCLUB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>○ Creator : <a href='https://t.me/sachin_official_admin'>Sachin S</a>\n○ Language :  <code>Kannada</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nRequest Group : <a href='https://t.me/KicchaRequest'>Kiccha Request</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>GD_FILMCLUB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True) 
