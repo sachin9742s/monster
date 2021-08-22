@@ -81,7 +81,7 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#DURATION</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 : <b>#RATING</b> ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
                 await message.reply_text(f"<b>🎬𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☛ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
@@ -99,8 +99,8 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-        else:
+            await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#DURATION</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 : <b>#RATING</b> ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            else:
             await message.reply_text(f"<b>🎬𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☞ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
 
@@ -145,7 +145,7 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#DURATION</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 : <b>#RATING</b> ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
                 await message.reply_text(f"<b>🎬𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☛ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
@@ -163,8 +163,8 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-        else:
+            await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#DURATION</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 : <b>#RATING</b> ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            else:
             await message.reply_text(f"<b>🎬𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☛ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
     
