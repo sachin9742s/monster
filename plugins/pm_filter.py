@@ -72,7 +72,7 @@ async def filter(client, message):
                 "total" : len(btns),
                 "buttons" : btns
             }
-        else:
+            else:
             buttons = btn
             buttons.append(
                 [InlineKeyboardButton(text="🎶 Pαɠҽʂ 1/1",callback_data="pages")]
