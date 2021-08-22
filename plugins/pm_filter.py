@@ -278,7 +278,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
                 ]
-            await message.reply(text="<b>○ Creator : <a href='https://t.me/sachin_official_admin'>Sachin S</a>\n○ Language :  <code>Kannada</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n○ Supported Site : <a href='https://my.telegram.org/'>Only Telegram</a>\n○ Server : <a href='https://herokuapp.com/'>Heroku</a>\n○ Database : <a href='https://www.mongodb.com/'>MangoDB</a>\nRequest Group : <a href='https://t.me/KicchaRequest'>Kiccha Request</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>GD_FILMCLUB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>Developer : <a href='https://t.me/sachin_official_admin'>𝐒𝐚𝐜𝐡𝐢𝐧 𝐒</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href=''>🔒</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>𝐆𝐃 𝐅𝐢𝐥𝐦𝐂𝐥𝐮𝐛</a>\nRequest Group : <a href='https://t.me/KicchaRequest'>KICCHA REQUEST</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
