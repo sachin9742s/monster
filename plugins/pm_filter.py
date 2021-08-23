@@ -275,9 +275,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB'),
                     InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest')
                 ]
-                [
-                    InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                ]
                 ]
             await message.reply(text="<b>○ My Boss : <a href='https://t.me/sachin_official_admin'>Sachin S</a>\n○ Language :  <code>Kannada</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\n○ Supported Site : <a href='https://my.telegram.org/'>Only Telegram</a>\n○ Server : <a href='https://herokuapp.com/'>Heroku</a>\n○ Database : <a href='https://www.mongodb.com/'>MangoDB</a>\nRequest Group : <a href='https://t.me/KicchaRequest'>Kiccha Request</a>\nUpdate Channel : <a href='https://t.me/GD_FILMCLUB'>GD_FILMCLUB</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
@@ -302,9 +299,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest'),
                         InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB')
-                    ]
-                    [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
                     ]
                     ]
                 
@@ -337,9 +331,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest'),
                         InlineKeyboardButton('Update Channel', url='https://t.me/GD_FILMCLUB')
-                    ]
-                    [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
                     ]
                     ]
                 
