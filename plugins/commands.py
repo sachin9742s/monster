@@ -101,11 +101,13 @@ async def start(bot, cmd):
                     [
                         InlineKeyboardButton("🗣️Group", url="https://telegram.dog/KicchaRequest"),
                         InlineKeyboardButton("📃 Channel", url="https://telegram.dog/GD_FILMCLUB"),
-                        InlineKeyboardButton("✳️ Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
                     ],
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("👨‍💼About", callback_data="about"),
+                        InlineKeyboardButton("✳️ Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
+                    ],
+                    [
+                        InlineKeyboardButton("About", callback_data="about")
                     ]
                 ]
             )
