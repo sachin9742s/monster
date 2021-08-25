@@ -100,9 +100,9 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#DURATION</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#RATING</b>\n \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬 𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#DURATION</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#RATING</b>\n \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-            await message.reply_text(f"<b>🎬𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☞ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_text(f"<b>🎬 𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☞ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
@@ -120,7 +120,7 @@ async def group(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"🎬[{get_size(file.file_size)}] ☬ 📁 {file.file_name} ☬"
+                filename = f"🎬[{get_size(file.file_size)}] ⥤ 📁 {file.file_name} ☬"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
