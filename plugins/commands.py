@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     
                     [
-                        InlineKeyboardButton("🎙  Add Me To Your Group ➕", url="https://t.me/{BOT_USERNAME}?startgroup=true"),
+                        InlineKeyboardButton("🎙  Add Me To Your Group ➕", url="https://t.me/Kirthi_mediafilterbot?startgroup=true"),
                     ],
                     [
                         InlineKeyboardButton("🗣️Group", url="https://telegram.dog/KicchaRequest"),
