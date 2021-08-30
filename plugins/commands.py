@@ -98,7 +98,10 @@ async def start(bot, cmd):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
+                    
                     [
+                        "🎙  Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                    ]
                         InlineKeyboardButton("🗣️Group", url="https://telegram.dog/KicchaRequest"),
                         InlineKeyboardButton("📃 Channel", url="https://telegram.dog/GD_FILMCLUB"),
                     ],
