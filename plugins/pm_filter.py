@@ -81,7 +81,7 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#Duration</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#Rating</b>\n \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#Duration</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#Rating</b>\n📩 𝐈𝐦𝐝𝐛 : <a href="#IMDB_URL">𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a> \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
             else:
                 await message.reply_text(f"<b>🎬𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☛ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
@@ -100,7 +100,7 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬 𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#Duration</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#Rating</b>\n \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬 𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#Duration</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#Rating</b>\n📩 𝐈𝐦𝐝𝐛 : <a href="#IMDB_URL">𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a> \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
             await message.reply_text(f"<b>🎬 𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☞ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
 
@@ -145,7 +145,7 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#Duration</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#Rating</b>\n \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+                await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#Duration</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#Rating</b>\n📩 𝐈𝐦𝐝𝐛 : <a href="#IMDB_URL">𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a> \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             else:
                 await message.reply_text(f"<b>🎬𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☛ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             return
@@ -163,7 +163,7 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#Duration</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#Rating</b>\n \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+            await message.reply_photo(photo=poster, caption=f"<b>🎬𝐅𝐢𝐥𝐦/𝐒𝐞𝐫𝐢𝐞𝐬 ☛ {search}\n🕐 𝐓𝐢𝐦𝐞 : <b>#Duration</b>\n📥 𝐌𝐨𝐯𝐢𝐞 𝐑𝐚𝐭𝐢𝐧𝐠 :<b>#Rating</b>\n📩 𝐈𝐦𝐝𝐛 : <a href="#IMDB_URL">𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞</a> \n \n© By:- [Kiccha Request](https://t.me/KicchaRequest) ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
             await message.reply_text(f"<b>🎬𝙔𝙤𝙪𝙧 𝙈𝙤𝙫𝙞𝙚 ☛ {search} ‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
      
